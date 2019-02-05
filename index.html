@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AudioPlayer</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="wrapper-audioplayer">
+		<div class="cgrid-container">
+			<div class="wrapper-list">
+				<article class="mol-post_Format4 mol-post_Format4--1" data-audioplayer="https://mdf.rpp-noticias.io/podcast%2F2018%2F12%2F14%2F75-jalea-promo.mp3">
+          <h3 class="Format4__headline Format4__title">
+            Title 1
+          </h3>
+          <div class="Format4__content">
+            <div class="Format4__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veritatis vero quisquam repellat.
+            </div>
+            <div id="icon-volume" class="icon-inactive"></div>
+            <div class="duration-podcast"></div>
+          </div>					
+				</article>
+
+        <article class="mol-post_Format4 mol-post_Format4--1" data-audioplayer="https://mdpod.rpp-noticias.io/85e2cfa9-c985-ba32-6409-dc254455d0e5.mp3">
+          <h3 class="Format4__headline Format4__title">
+            Title 2
+          </h3>
+          <div class="Format4__content">
+            <div class="Format4__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veritatis vero quisquam repellat.
+            </div>
+            <div id="icon-volume" class="icon-inactive"></div>
+            <div class="duration-podcast"></div>
+          </div>          
+        </article>
+
+        <article class="mol-post_Format4 mol-post_Format4--1" data-audioplayer="https://mdf.rpp-noticias.io/podcast%2F2018%2F12%2F17%2Feh-basura-17-12-promo.mp3">
+          <h3 class="Format4__headline Format4__title">
+            Title 3
+          </h3>
+          <div class="Format4__content">
+            <div class="Format4__description">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veritatis vero quisquam repellat.
+            </div>
+            <div id="icon-volume" class="icon-inactive"></div>
+            <div class="duration-podcast"></div>
+          </div>          
+        </article>
+      </div>
+	</div>
+
+  <div class="modal-audioplayer" id="comp_modalAudioplayer">
+    <div class="seekbarControl">
+      <span class="outer">
+        <span class="inner"></span>
+      </span>
+    </div>
+    <div class="molecules-post-internal-audioplayerRider cgrid-container">
+      <div class="podcast__content">
+        <audio id="audio" preload="metadata">
+          <source id="sourceAudio" src="" type="audio/mpeg">
+        Su browser no soporta el audio.
+        </audio>
+        <div class="time">
+          <span id="start">00:00</span>
+          <span id="end">00:00</span>
+        </div>
+        <div class="wrapper-split-bloque">
+          <div class="program">
+            <div class="name-program" id="renameTitleProgram"></div>
+          </div>
+          <div class="btn control">
+            <div id="backward" class="icon-backward"></div>
+            <button id="play" class="icon-pause"></button>
+            <div id="forward" class="icon-forward"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
